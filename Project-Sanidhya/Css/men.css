@@ -151,36 +151,23 @@ header p {
     font-weight: bold;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #333333; /* Dark background for the footer */
-    color: white; /* White text color for contrast */
-    padding: 30px 20px;
+    background-color: #333;
+    color: white;
     text-align: center;
-    font-size: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 2em 1em;
 }
 
-/* Footer Links */
 footer a {
-    color: white;
+    color: #0073e6;
     text-decoration: none;
-    font-weight: bold;
-    margin: 0 15px;
-    transition: color 0.3s ease;
+    margin: 0 1em;
+    transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #f8c229; /* Golden color for links on hover */
-}
-
-/* Footer Text */
-footer p {
-    color: #aaa; /* Lighter text color for copyright */
-    font-size: 0.9rem;
-    margin-top: 15px;
+    color: #ffd700;
 }
 
 /* Responsive Design for Footer */

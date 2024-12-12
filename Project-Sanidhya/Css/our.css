@@ -123,17 +123,23 @@ main {
 
 /* Footer */
 footer {
-    background-color: #1e2a3a;
-    color: #fff;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 60px;
+    padding: 2em 1em;
 }
 
-footer p {
-    font-size: 14px;
-    letter-spacing: 1px;
+footer a {
+    color: #0073e6;
+    text-decoration: none;
+    margin: 0 1em;
+    transition: color 0.3s;
 }
+
+footer a:hover {
+    color: #ffd700;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
