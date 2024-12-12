@@ -1,0 +1,187 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3f3; /* Soft pinkish background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ffb6c1; /* Light pink for the navbar */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav .brand-name {
+    font-size: 1.5rem;
+    color: #fff; /* White logo text */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8d7da; /* Light pink background for header */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #d6336c; /* Darker pink for the header title */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #6c757d; /* Muted gray for the subtitle */
+}
+
+/* Product Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.width-25 {
+    width: 23%;
+    margin-bottom: 30px;
+    background-color: #ffffff; /* White background for product cards */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.width-25:hover {
+    transform: scale(1.05);
+}
+
+.product-section {
+    padding: 15px;
+}
+
+.product-img-center {
+    display: flex;
+    justify-content: center;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product-name a {
+    text-decoration: none;
+    color: #d6336c; /* Dark pink text for product names */
+}
+
+.product-rating {
+    font-size: 1rem;
+    color: #FFD700; /* Golden stars for rating */
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product-discounted-price {
+    font-weight: bold;
+    color: #ff4d4d; /* Red for discounted price */
+}
+
+.product-original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+}
+
+.product-discount {
+    color: #28a745; /* Green for discount tag */
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #d6336c; /* Dark pink footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .width-25 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .product-price {
+        font-size: 1rem;
+    }
+}
